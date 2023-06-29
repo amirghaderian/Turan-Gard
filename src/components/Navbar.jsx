@@ -5,7 +5,6 @@ import ticket from "../../public/assets/ticket.svg";
 import airplane from "../../public/assets/airplane.svg";
 import hamburgerMenu from "../../public/assets/sort.svg";
 import login from "../../public/assets/login.svg";
-
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -90,7 +89,7 @@ const Navbar = () => {
 
       {/* hamburger menu */}
 
-      <div className="px-6 md:hidden flex items-center justify-between mb-6">
+      <div className={`px-6 md:hidden flex items-center justify-between `}>
         <img src={hamburgerMenu} alt="hamburgerMenu" onClick={showHandler} />
         <div className="flex items-center justify-center gap-x-1">
           <img src={login} alt="login" />
@@ -98,8 +97,8 @@ const Navbar = () => {
         </div>
       </div>
       {showMenu && (
-        <div className="px-12 md:hidden z-10 absolute top-32 w-full  transition-all duration-300">
-          <nav className="bg-mylight rounded-2xl">
+        <div className="px-12 md:hidden z-10 absolute top-32 w-48   transition-all duration-700">
+          <nav className="bg-mylight rounded-2xl absolute left-24">
             <ul className="flex flex-col items-center gap-x-4">
               <li>
                 <a
@@ -114,7 +113,7 @@ const Navbar = () => {
                   className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
                   href="#pakage"
                 >
-                  لیست تور ها
+                   تور ها
                 </a>
               </li>
               <li>

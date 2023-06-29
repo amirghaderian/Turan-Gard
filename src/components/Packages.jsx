@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useMediaQuery } from "react-responsive";
 
 // icons
 import takhteJamshid from "../../public/assets/takhtjamshid-new.jpg";
@@ -64,6 +65,8 @@ const packs = [
 ];
 
 const Packages = () => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
+
   return (
     <div id="pakage">
       <div className="mb-16">
@@ -76,12 +79,7 @@ const Packages = () => {
       </div>
 
       <div className="flex items-center px-4 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400] ">
-        <Swiper
-          spaceBetween={13}
-          slidesPerView={5}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
+        <Swiper spaceBetween={isSmallScreen ? 100 :16} slidesPerView={isSmallScreen ? 1 : 4}>
           {packs.map((pack) => (
             <SwiperSlide key={pack.id}>
               <Package

@@ -3,6 +3,7 @@ import bestPrice from "../../public/assets/bestPrice.svg";
 import reserve from "../../public/assets/reserve.svg";
 import liked from "../../public/assets/liked.svg";
 import worldMove from "../../public/assets/world.mp4";
+import mobilescreen from "../../public/assets/mobilescreen.jpg";
 
 const Header2 = () => {
   const [isHoveredCard1, setIsHoveredCard1] = useState(false);
@@ -35,6 +36,7 @@ const Header2 = () => {
 
   return (
     <section className="mb-16">
+      <img className="md:hidden" src={mobilescreen} />
       <div className="hidden md:flex items-center justify-center">
         <div className="h-200 min-w-full bg-red-50">
           <video
