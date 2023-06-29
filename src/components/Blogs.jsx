@@ -25,15 +25,43 @@ const blogs = [
 ];
 
 const Blogs = () => {
-  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
-
   return (
     <div className="" id="weblog">
       <h2 className="text-xl md:text-2xl font-bold text-center">
         <span className="text-myorange">جدیدترین </span>وبلاگ ها
       </h2>
-      <div className="flex items-center pr-16 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14">
-        <Swiper spaceBetween={20} slidesPerView={isSmallScreen ? 1 :4.7}>
+      <div className="flex items-center pr-16 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14  max-w-1800 mx-auto">
+        <Swiper
+          breakpoints={{
+            1700: {
+              slidesPerView: 5.5,
+            },
+            1560: {
+              slidesPerView: 5,
+            },
+            1420:{
+              slidesPerView:4.5
+            },
+            1280: {
+              slidesPerView: 4,
+            },
+            1140: {
+              slidesPerView: 3.5,
+            },
+            1000: {
+              slidesPerView: 3,
+            },
+            860: {
+              slidesPerView: 2.5,
+            },
+            740: {
+              slidesPerView: 2,
+            },
+           620: {
+              slidesPerView:1.5,
+            },
+          }}
+        >
           {blogs.map((blog) => (
             <SwiperSlide key={blog.id}>
               <Blog image={blog.image} title={blog.title} key={blog.id} />

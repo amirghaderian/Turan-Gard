@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth:{ "1800":"1800px"},
       colors: {
         "myblue" : "#BFD7ED",
         "myorange" : "#FF8300",
@@ -28,6 +29,7 @@ module.exports = {
       },
       spacing : {
         200:"50rem",
+        1800:"1800px"
         
       }
       

@@ -9,7 +9,7 @@ import logo from "../../public/assets/logo.png";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 px-9 md:px-20 py-6 bg-mylight  rounded-tl-[100px]">
+    <div className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 px-9 md:px-20 py-6 bg-mylight  rounded-[100px]  max-w-1800 mx-auto">
       {/* header */}
       <header className="flex flex-col gap-y-8 md:w-2/5 md:pt-8 ">
         <div className="flex">

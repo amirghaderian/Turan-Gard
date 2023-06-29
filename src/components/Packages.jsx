@@ -1,8 +1,10 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { useMediaQuery } from "react-responsive";
-
+import { Swiper, SwiperSlide ,} from "swiper/react";
+import  { Navigation, Pagination,A11y } from 'swiper';
+import "swiper/swiper.min.css"
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 // icons
 import takhteJamshid from "../../public/assets/takhtjamshid-new.jpg";
 import turkiye from "../../public/assets/turkiye.jpg";
@@ -12,6 +14,9 @@ import londan from "../../public/assets/londan.jpg";
 import canada from "../../public/assets/canada.webp";
 // components
 import Package from "./Package";
+
+
+
 
 const packs = [
   {
@@ -65,8 +70,6 @@ const packs = [
 ];
 
 const Packages = () => {
-  const isSmallScreen = useMediaQuery({ maxWidth: 640 });
-
   return (
     <div id="pakage">
       <div className="mb-16">
@@ -78,10 +81,36 @@ const Packages = () => {
         </p>
       </div>
 
-      <div className="flex items-center px-4 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400] ">
-        <Swiper spaceBetween={isSmallScreen ? 100 :16} slidesPerView={isSmallScreen ? 1 : 4}>
+      <div className="flex items-center px-1 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1800 mx-auto">
+        <Swiper spaceBetween={4} modules={[Navigation,Pagination,A11y]}
+        navigation
+        pagination={{clickable:true}}
+          breakpoints={{
+            1700: {
+              slidesPerView: 4.5,
+            },
+            1560: {
+              slidesPerView: 4,
+            },
+            1420: {
+              slidesPerView: 3.5,
+            },
+            1280: {
+              slidesPerView: 3,
+            },
+            1140: {
+              slidesPerView: 2.5,
+            },
+            1000: {
+              slidesPerView: 2,
+            },
+            860: {
+              slidesPerView: 1.5,
+            },
+          }}
+        >
           {packs.map((pack) => (
-            <SwiperSlide key={pack.id}>
+            <SwiperSlide key={pack.id} > 
               <Package
                 title={pack.title}
                 description={pack.description}

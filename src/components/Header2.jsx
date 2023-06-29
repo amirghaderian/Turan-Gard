@@ -47,7 +47,7 @@ const Header2 = () => {
           />
           <div className="absolute	top-1/2 text-white right-40">
             <h2 className="text-3xl"> توران گرد</h2>
-            <p className="pt-1">
+            <p className="pt-3  text-lg ">
               این یک متن آزمایشی میباشد که استفاده آن چیزی که میخواهد در خصوص
               متن ها نوشته شود.
             </p>
@@ -55,8 +55,8 @@ const Header2 = () => {
         </div>
       </div>
 
-      <div className="px-40 hidden md:flex items-center justify-center -mt-16">
-        <div className="w-full bg-red-50 py-14 px-4 flex items-center justify-center gap-x-10 cards">
+      <div className="px-40 hidden md:flex items-center justify-center -mt-16 ">
+        <div className="w-full bg-red-50 py-14 px-4 flex items-center justify-center gap-x-10 cards rounded-full">
           {/* first */}
           <div
             className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard ${
