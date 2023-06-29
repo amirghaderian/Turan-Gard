@@ -1,9 +1,11 @@
 import React from "react";
 import Blog from "./Blog";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper";
+import "swiper/swiper.min.css";
 import "swiper/css";
-import { useMediaQuery } from "react-responsive";
-
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 // images
 import melk from "../../public/assets/melk.jpg";
 import gardeshgari from "../../public/assets/gardeshgari.jpg";
@@ -32,6 +34,9 @@ const Blogs = () => {
       </h2>
       <div className="flex items-center pr-16 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14  max-w-1800 mx-auto">
         <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          navigation
+          pagination={{ clickable: true }}
           breakpoints={{
             1700: {
               slidesPerView: 5.5,
@@ -39,8 +44,8 @@ const Blogs = () => {
             1560: {
               slidesPerView: 5,
             },
-            1420:{
-              slidesPerView:4.5
+            1420: {
+              slidesPerView: 4.5,
             },
             1280: {
               slidesPerView: 4,
@@ -57,8 +62,8 @@ const Blogs = () => {
             740: {
               slidesPerView: 2,
             },
-           620: {
-              slidesPerView:1.5,
+            620: {
+              slidesPerView: 1.5,
             },
           }}
         >
