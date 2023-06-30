@@ -5,7 +5,6 @@ import airplane from "../../public/assets/airplane.svg";
 import mail from "../../public/assets/mail.svg";
 import phone from "../../public/assets/phone.svg";
 import enamad from "../../public/assets/enamad.png";
-import logo from "../../public/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -91,16 +90,11 @@ const Footer = () => {
             </div>
           </div>
           {/* enamad */}
-          <div className="flex items-center  gap-x-6">
+          <div className="flex items-center    ">
             <img
               src={enamad}
               alt="enamad"
-              className="w-16 h-16 md:w-auto md:h-auto"
-            />
-            <img
-              src={logo}
-              alt="logo"
-              className="w-20 h-16 md:w-auto md:h-auto"
+              className="w-16 h-16 md:w-auto md:h-auto min-w-100 "
             />
           </div>
         </div>

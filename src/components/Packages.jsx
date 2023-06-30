@@ -14,6 +14,8 @@ import londan from "../../public/assets/londan.jpg";
 import canada from "../../public/assets/canada.webp";
 // components
 import Package from "./Package";
+//sideBar
+
 
 
 
@@ -87,7 +89,7 @@ const Packages = () => {
         pagination={{clickable:true}}
           breakpoints={{
             1700: {
-              slidesPerView: 4.5,
+              slidesPerView: 4.8,
             },
             1560: {
               slidesPerView: 4,

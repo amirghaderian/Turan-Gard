@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       maxWidth:{ "1800":"1800px"},
+      minWidth:{"900":"900px",100:"100px"},
       colors: {
         "myblue" : "#BFD7ED",
         "myorange" : "#FF8300",

@@ -43,7 +43,8 @@ const Header2 = () => {
             src={worldMove}
             autoPlay
             loop
-            className="object-cover h-full w-full"
+            muted
+            className="object-cover h-full w-full max-w-1800  mx-auto"
           />
           <div className="absolute	top-1/2 text-white right-40">
             <h2 className="text-3xl"> توران گرد</h2>
@@ -55,17 +56,17 @@ const Header2 = () => {
         </div>
       </div>
 
-      <div className="px-40 hidden md:flex items-center justify-center -mt-16 ">
+      <div className="px-40 hidden md:flex items-center justify-center -mt-16 min-w-900 ">
         <div className="w-full bg-red-50 py-14 px-4 flex items-center justify-center gap-x-10 cards rounded-full">
           {/* first */}
           <div
-            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard ${
+            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl shadow-orange-200 hover:shadow-orange-400 ${
               isHoveredCard2 || isHoveredCard3 ? "blur-sm	scale-90 	" : ""
             } hover: border-4 cursor-pointer transition hover: duration-700 hover:scale-110	 	`}
             onMouseEnter={handleHoverCard1}
             onMouseLeave={handleMouseLeaveCard1}
           >
-            <div className="flex flex-col items-center gap-x-1">
+            <div className="flex flex-col items-center gap-x-1 text-center">
               <img
                 src={bestPrice}
                 alt="bestPrice"
@@ -80,14 +81,14 @@ const Header2 = () => {
           </div>
           {/* second */}
           <div
-            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard  ${
+            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl  shadow-orange-200 hover:shadow-orange-400 ${
               isHoveredCard1 || isHoveredCard3 ? "blur-sm	scale-90	" : ""
             } hover: border-4 cursor-pointer hover:scale-110 hover: duration-700		`}
             onMouseEnter={handleHoverCard2}
             onMouseLeave={handleMouseLeaveCard2}
           >
             <img src={reserve} alt="reserve" className="w-10 h-10 mx-auto " />
-            <span className="flex text-2xl font-medium justify-center pt-1 ">
+            <span className="flex text-2xl font-medium justify-center pt-1  text-center">
               رزرو سریع
             </span>
             <span className="text-sm text-center">بهترین هتل ها و بهترین</span>
@@ -95,14 +96,14 @@ const Header2 = () => {
           </div>
           {/* third */}
           <div
-            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard ${
+            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl  shadow-orange-200 hover:shadow-orange-400 ${
               isHoveredCard1 || isHoveredCard2 ? "blur-sm scale-90		" : ""
             } hover: border-4 cursor-pointer hover:scale-110 hover: duration-700`}
             onMouseEnter={handleHoverCard3}
             onMouseLeave={handleMouseLeaveCard3}
           >
             <img src={liked} alt="liked" className="w-10 h-10 mx-auto" />
-            <span className="flex justify-center text-2xl font-medium text pt-1">
+            <span className="flex justify-center text-2xl font-medium text pt-1 text-center">
               رضایت مشتری
             </span>
 

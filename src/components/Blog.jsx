@@ -5,8 +5,8 @@ import React from "react";
 
 const Blog = ({ image, title }) => {
   return (
-    <div className="flex w-[273px] h-full">
-      <div className="bg-red-200 relative overflow-hidden rounded-3xl">
+    <div className="flex w-[273px] h-full m-auto">
+      <div className="bg-red-200 relative overflow-hidden rounded-3xl ">
         <div className="w-[273px] h-[190px]">
           <img src={image} alt="blog picture" className="w-full h-full"/>
         </div>
