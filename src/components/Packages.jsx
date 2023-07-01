@@ -83,8 +83,8 @@ const Packages = () => {
         </p>
       </div>
 
-      <div className="flex items-center px-1 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1800 mx-auto">
-        <Swiper spaceBetween={4} modules={[Navigation,Pagination,A11y]}
+      <div className="flex items-center px-1 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1900 mx-auto">
+        <Swiper spaceBetween={4} modules={[Navigation]}
         navigation
         pagination={{clickable:true}}
           breakpoints={{

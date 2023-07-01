@@ -61,7 +61,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="relative max-w-1800  mx-auto ">
+    <div className="relative max-w-1900  mx-auto ">
       {/* mobile navbar */}
       <div className="flex md:hidden items-center justify-center py-4 bg-mylight mb-7">
         <span className="font-extrabold text-2xl text-myorange">توران گرد</span>

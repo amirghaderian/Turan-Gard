@@ -32,9 +32,9 @@ const Blogs = () => {
       <h2 className="text-xl md:text-2xl font-bold text-center">
         <span className="text-myorange">جدیدترین </span>وبلاگ ها
       </h2>
-      <div className="flex items-center m-auto md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14  max-w-1800">
+      <div className="flex items-center m-auto md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14  max-w-1900">
         <Swiper
-          modules={[Navigation, Pagination, A11y]}
+          modules={[Navigation]}
           navigation
           pagination={{ clickable: true }}
           breakpoints={{
@@ -60,10 +60,10 @@ const Blogs = () => {
               slidesPerView: 2.5,
             },
             740: {
-              slidesPerView: 2,
+              slidesPerView: 1,
             },
             620: {
-              slidesPerView: 1.5,
+              slidesPerView: 1,
             },
           }}
         >

@@ -8,7 +8,7 @@ import talkingDog from "../../public/assets/talkingDog.png";
 
 const Records = () => {
   return (
-    <div className="px-8 mb-10  max-w-1800 mx-auto">
+    <div className="px-8 mb-10  max-w-1900 mx-auto">
       <h2 className="text-xl md:text-2xl font-bold text-center">
         <span className="text-myorange">همکاری </span>با شرکت های بزرگ
       </h2>

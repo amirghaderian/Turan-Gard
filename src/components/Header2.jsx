@@ -3,8 +3,7 @@ import bestPrice from "../../public/assets/bestPrice.svg";
 import reserve from "../../public/assets/reserve.svg";
 import liked from "../../public/assets/liked.svg";
 import worldMove from "../../public/assets/world.mp4";
-import mobilescreen from "../../public/assets/mobilescreen.jpg";
-
+import turan from "../../public/assets/turan.jpg";
 const Header2 = () => {
   const [isHoveredCard1, setIsHoveredCard1] = useState(false);
   const [isHoveredCard2, setIsHoveredCard2] = useState(false);
@@ -35,20 +34,20 @@ const Header2 = () => {
   };
 
   return (
-    <section className="mb-16">
-      <img className="md:hidden" src={mobilescreen} />
+    <section className="mb-16 ">
+      <img className="md:hidden" src={turan} />
       <div className="hidden md:flex items-center justify-center">
-        <div className="h-200 min-w-full bg-red-50">
+        <div className="h-200 min-w-full  bg-red-50">
           <video
             src={worldMove}
             autoPlay
             loop
             muted
-            className="object-cover h-full w-full max-w-1800  mx-auto"
+            className=" object-fill h-680 w-full min-h-900  mx-auto p-0"
           />
           <div className="absolute	top-1/2 text-white right-40">
-            <h2 className="text-3xl"> توران گرد</h2>
-            <p className="pt-3  text-lg ">
+            <h2 className="text-3xl font-medium"> توران گرد </h2>
+            <p className="pt-3  text-lg font-medium ">
               این یک متن آزمایشی میباشد که استفاده آن چیزی که میخواهد در خصوص
               متن ها نوشته شود.
             </p>
