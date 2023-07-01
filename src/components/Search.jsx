@@ -19,7 +19,7 @@ const Search = () => {
   }
   function DatePickerInput(props) {
     return (
-      <div className="bg-mywhite py-2 flex text-end  justify-around rounded-md overflow-hidden border  mt-2">
+      <div className="bg-mywhite py-2 flex text-end  justify-around rounded-md overflow-hidden border ">
         <input className="popo px-5" {...props} />
         <img
           src={calendar}
