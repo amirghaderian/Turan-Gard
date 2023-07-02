@@ -15,7 +15,8 @@ import {
   ListItemText,
   SwipeableDrawer,
 } from "@mui/material";
-import Icon from "@mui/material/Icon";
+import { Link } from "react-router-dom";
+import Packages from "./Packages";
 
 const Navbar = () => {
   const [state, setState] = useState({ right: false });
@@ -51,7 +52,6 @@ const Navbar = () => {
             <ListItemButton>
               <ListItemText className="text-center" />
               <a href={item.href}>{item.text}</a>
-              
             </ListItemButton>
           </ListItem>
         ))}
@@ -118,6 +118,14 @@ const Navbar = () => {
               >
                 وبلاگ
               </a>
+            </li>
+            <li>
+              <Link
+                to="/about "
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+              >
+                درباره ی ما
+              </Link>
             </li>
           </ul>
         </nav>
