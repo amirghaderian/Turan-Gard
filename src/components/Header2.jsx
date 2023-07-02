@@ -46,7 +46,7 @@ const Header2 = () => {
             className=" object-fill h-200 w-full min-h-900  mx-auto p-0 "
           />
           <div className="absolute	top-1/2 text-white right-40">
-            <h2 className="text-3xl font-medium"> توران گرد </h2>
+            <h2 className="text-3xl font-medium"> توران  گرد </h2>
             <p className="pt-3  text-lg font-medium ">
               این یک متن آزمایشی میباشد که استفاده آن چیزی که میخواهد در خصوص
               متن ها نوشته شود.
