@@ -80,13 +80,21 @@ const Navbar = () => {
         </div>
         <nav className="flex-1">
           <ul className="flex items-center gap-x-4">
-            <li>
+          <li>
+              
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 text-myorange border-b-2 border-myorange hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3"
                 href="#"
               >
                 صفحه اصلی
               </a>
+            </li>
+            <li>
+            <Link
+                to="/ "
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+              >
+صفحه اصلی 2              </Link>
             </li>
             <li>
               <a
