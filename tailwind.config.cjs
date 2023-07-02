@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx,css}"],
   theme: {
     extend: {
-      maxWidth: { 1900: "1910px" },
+      maxWidth: { 1900: "1910px" ,700:"700px" },
       minWidth: { 900: "900px", 100: "100px", 1000: "1000px" },
       minHeight: { 900: "200px" },
       colors: {

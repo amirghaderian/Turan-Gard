@@ -17,8 +17,6 @@ const Home = () => {
       <Blogs />
       <BestTrip />
       <Records />
-      <Footer />
-      <Develop />
     </>
   );
 };
