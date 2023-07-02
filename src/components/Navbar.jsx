@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import Packages from "./Packages";
 
 const Navbar = () => {
+  console.log("object")
   const [state, setState] = useState({ right: false });
 
   const toggleDrawer = (anchor, open) => (event) => {
