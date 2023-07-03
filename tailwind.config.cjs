@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       maxWidth: { 1900: "1910px" ,700:"700px" },
       minWidth: { 900: "900px", 100: "100px", 1000: "1000px" },
-      minHeight: { 900: "200px" },
+      minHeight: { 900: "900px" },
+      textUnderlineOffset:{20:"20px"},
+      textDecorationThickness:{3:"3px"},
       colors: {
         myblue: "#BFD7ED",
         myorange: "#FF8300",
@@ -18,6 +20,7 @@ module.exports = {
         card1: "#f43f5e",
         card2: "#3b82f6",
         card3: "#22c55e",
+        bordColor:"#f1f1f1fe"
       },
       fontFamily: {
         sans: ['"yekanbakh"'],
@@ -29,8 +32,10 @@ module.exports = {
         200: "50rem",
         680:"680px",
         1900: "1900px",
+        1200:"1200px",
         "40%":"40%"
       },
+      
     },
   },
   plugins: [],

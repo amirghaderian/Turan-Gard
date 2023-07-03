@@ -46,7 +46,7 @@ const Header2 = () => {
             className=" object-fill h-200 w-full min-h-900  mx-auto p-0 "
           />
           <div className="absolute	top-1/2 text-white right-40">
-            <h2 className="text-3xl font-medium"> توران  گرد </h2>
+            <h2 className="text-3xl font-medium"> توران گرد </h2>
             <p className="pt-3  text-lg font-medium ">
               این یک متن آزمایشی میباشد که استفاده آن چیزی که میخواهد در خصوص
               متن ها نوشته شود.
@@ -59,7 +59,7 @@ const Header2 = () => {
         <div className="w-full bg-red-50 py-14 px-4 flex items-center justify-center gap-x-10 cards rounded-full">
           {/* first */}
           <div
-            className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl shadow-orange-200 hover:shadow-orange-400 ${
+            className={`flex flex-col  card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl shadow-orange-200 hover:shadow-orange-400 ${
               isHoveredCard2 || isHoveredCard3 ? "blur-sm	scale-90 	" : ""
             } hover: border-4 cursor-pointer transition hover: duration-700 hover:scale-110	 	`}
             onMouseEnter={handleHoverCard1}
@@ -82,7 +82,7 @@ const Header2 = () => {
           <div
             className={`flex flex-col card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl  shadow-orange-200 hover:shadow-orange-400 ${
               isHoveredCard1 || isHoveredCard3 ? "blur-sm	scale-90	" : ""
-            } hover: border-4 cursor-pointer hover:scale-110 hover: duration-700		`}
+            } hover: border-4 cursor-pointer hover:scale-110 hover: duration-700`}
             onMouseEnter={handleHoverCard2}
             onMouseLeave={handleMouseLeaveCard2}
           >

@@ -11,16 +11,14 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   SwipeableDrawer,
 } from "@mui/material";
-import { Link } from "react-router-dom";
-import Packages from "./Packages";
+import { Link,NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  console.log("object")
   const [state, setState] = useState({ right: false });
+  const [isActive,setActive]=useState(true)
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -80,21 +78,13 @@ const Navbar = () => {
         </div>
         <nav className="flex-1">
           <ul className="flex items-center gap-x-4">
-          <li>
-              
-              <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 text-myorange border-b-2 border-myorange hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#"
+            <li>
+              <Link
+                to="/ "
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3"
               >
                 صفحه اصلی
-              </a>
-            </li>
-            <li>
-            <Link
-                to="/ "
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-              >
-صفحه اصلی 2              </Link>
+              </Link>
             </li>
             <li>
               <a
@@ -103,6 +93,7 @@ const Navbar = () => {
               >
                 لیست تور ها
               </a>
+              
             </li>
             <li>
               <a

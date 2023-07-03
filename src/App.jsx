@@ -2,7 +2,7 @@ import "./font.css";
 import { Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import React from "react";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import Navbar from "./components/Navbar";
 import Records from "./components/Records";
 import Footer from "./components/Footer";
