@@ -8,7 +8,7 @@ const About = () => {
       <div>
 
         <div
-          className="flex justify-center h-200 w-full max-w-1900 object-cover"
+          className="flex justify-center h-680 w-full max-w-1900 object-cover mx-auto"
           style={styles }
         >
         </div>

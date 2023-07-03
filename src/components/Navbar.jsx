@@ -5,6 +5,7 @@ import ticket from "../../public/assets/ticket.svg";
 import airplane from "../../public/assets/airplane.svg";
 import hamburgerMenu from "../../public/assets/sort.svg";
 import login from "../../public/assets/login.svg";
+import { useParams } from "react-router-dom";
 import {
   Box,
   Divider,
@@ -19,6 +20,8 @@ import { Link,NavLink } from "react-router-dom";
 const Navbar = () => {
   const [state, setState] = useState({ right: false });
   const [isActive,setActive]=useState(true)
+  const {id}=useParams()
+  console.log(id)
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -81,7 +84,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/ "
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3 ${id==="/" && "bg-yellow-900" }`}
               >
                 صفحه اصلی
               </Link>

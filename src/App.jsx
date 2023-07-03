@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import React from "react";
 import About from "./pages/About/About";
 import Navbar from "./components/Navbar";
-import Records from "./components/Records";
 import Footer from "./components/Footer";
 
 const App = () => {
