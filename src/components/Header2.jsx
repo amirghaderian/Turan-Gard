@@ -37,20 +37,20 @@ const Header2 = () => {
     <section className="mb-16 ">
       <img className="md:hidden" src={turan} />
       <div className="hidden md:flex items-center justify-center">
-        <div className="h-200 min-w-full  bg-red-50">
+        <div className="h-900 min-w-full  bg-red-50">
           <video
             src={worldMove}
             autoPlay
             loop
             muted
-            className=" object-fill h-200 w-full min-h-900  mx-auto p-0 "
+            className=" object-fill h-900 w-full min-h-900  mx-auto p-0 "
           />
           <div className="absolute	top-1/2 text-white right-40">
-            <h2 className="text-3xl font-medium"> توران گرد </h2>
-            <p className="pt-3  text-lg font-medium ">
-              این یک متن آزمایشی میباشد که استفاده آن چیزی که میخواهد در خصوص
-              متن ها نوشته شود.
+            <h2 className="text-6xl  font-medium"> توران گرد </h2>
+            <p className="pt-3  text-xl font-medium ">
+              تجربه ی سفری لذت بخش آرام و مطمئن
             </p>
+            <p className="pt-3  text-xl font-medium ">با توران گرد</p>
           </div>
         </div>
       </div>

@@ -20,7 +20,8 @@ module.exports = {
         card1: "#f43f5e",
         card2: "#3b82f6",
         card3: "#22c55e",
-        bordColor:"#f1f1f1fe"
+        aboutcolor:"rgb(245,245,245)",
+        bordcolor:"rgb(229,229,229)"
       },
       fontFamily: {
         sans: ['"yekanbakh"'],
@@ -31,6 +32,7 @@ module.exports = {
       spacing: {
         200: "50rem",
         680:"680px",
+        900:"960px",
         1900: "1900px",
         1200:"1200px",
         "40%":"40%"
