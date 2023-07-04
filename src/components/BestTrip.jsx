@@ -5,7 +5,7 @@ import irvan from "../../public/assets/irvan.jpg";
 
 const BestTrip = () => {
   return (
-    <div className="mt-12 mb-16 px-8 md:px-20" id="bestTrip ">
+    <div className="mt-12 mb-16 px-8 md:pl-52 md:pr-52 " id="bestTrip ">
       <div className="bg-orange-300 rounded-2xl flex flex-col gap-y-2 md:flex-row md:gap-x-4  max-w-1900 mx-auto">
         {/* title section */}
         <div className="flex flex-col gap-y-2 pt-6 md:pt-16">

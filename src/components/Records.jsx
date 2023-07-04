@@ -15,7 +15,7 @@ const Records = () => {
       <p className="text-xs text-mygray text-center mt-8">
         شرکت های بزرگ که به ما اعتماد کرده اند
       </p>
-      <div className="flex gap-x-4 items-center justify-between md:justify-evenly md:gap-x-8 mt-8">
+      <div className="flex gap-x-4 items-center justify-between md:justify-evenly md:gap-x-8 mt-8 md:px-52">
         <img
           src={follow}
           alt="follow"

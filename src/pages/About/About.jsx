@@ -11,19 +11,19 @@ const About = () => {
           className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto"
           style={styles}
         ></div>
-        <h1 className="relative bottom-32 text-white text-3xl leading-loose">
+        <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">
           درباره توران گرد
         </h1>
-        <p className="relative bottom-32 text-white text-xl ">
+        <p className="relative bottom-32 text-white text-xl pr-20 ">
           تجربه سفری لذت بخش با توران گرد
         </p>
         <div className=" flex mx-auto   ">
           <div>
             <div className="border-2 border-bordcolor">
-              <h1 className=" border-b-2 border-bordcolor text-3xl ">
+              <h1 className=" border-b-2 border-bordcolor text-3xl pr-5 ">
                 آژانس هواپیمایی توران گرد
               </h1>
-              <p className="leading-8 text-xl font-thin  	">
+              <p className="leading-8 text-xl font-thin pr-5 	">
                 عازم کجا هستید؟ هیچ فرقی نمی‌کند. این حق شماست که سفری باکیفیت،
                 آسان و مطمئن را تجربه کنید. توران گرد، به عنوان رتبه یک فروش
                 بلیط سفر در کنار شماست تا تجربه‌ای شایسته از یک سفر به‌یادماندنی
@@ -45,11 +45,11 @@ const About = () => {
                 هستیم راه را درست رفته‌ایم، چرا که مورداعتماد شما هستیم.
               </p>
             </div>
-            <div className=" border-2 border-bordcolor mt-28">
-              <h1 className="border-b-2 border-bordcolor text-3xl mt-3 pr-4">
+            <div className=" border-2 border-bordcolor mt-28 pr-5">
+              <h1 className="border-b-2 border-bordcolor text-3xl mt-3 pr-5 ">
                 ارزش های توران گرد
               </h1>
-              <p className="leading-8 text-xl font-thin">
+              <p className="leading-8 text-xl font-thin pr-5">
                 توران گرد یک خانواده بزرگ است؛ خانواده‌ای که در آن روابط افراد
                 بر اساس اعتماد و همکاری متقابل تعریف شده. در بین اعضای این
                 خانواده ارزش‌هایی شکل گرفته تا کار کردن به یک فعالیت لذت‌بخش
