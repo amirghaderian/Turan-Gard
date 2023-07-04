@@ -8,16 +8,16 @@ const About = () => {
     <>
       <div className="bg-aboutcolor">
         <div
-          className="flex justify-center h-680 w-full max-w-1900 object-cover mx-auto"
+          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto"
           style={styles}
         ></div>
-        <h1 className="relative bottom-32 text-white text-3xl right-72 leading-loose">
+        <h1 className="relative bottom-32 text-white text-3xl leading-loose">
           درباره توران گرد
         </h1>
-        <p className="relative bottom-32 text-white text-xl right-72 ">
+        <p className="relative bottom-32 text-white text-xl ">
           تجربه سفری لذت بخش با توران گرد
         </p>
-        <div className="w-1200 flex mx-auto   ">
+        <div className=" flex mx-auto   ">
           <div>
             <div className="border-2 border-bordcolor">
               <h1 className=" border-b-2 border-bordcolor text-3xl ">
