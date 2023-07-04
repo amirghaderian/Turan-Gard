@@ -83,7 +83,7 @@ const Packages = () => {
         </p>
       </div>
 
-      <div className="flex items-center px-1 md:px-52 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1900 mx-auto">
+      <div className="flex items-center px-1 md:px-64 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1900 mx-auto">
         <Swiper spaceBetween={4} modules={[Navigation]}
         navigation
         pagination={{clickable:true}}

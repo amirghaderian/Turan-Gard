@@ -32,7 +32,7 @@ const Blogs = () => {
       <h2 className="text-xl md:text-2xl font-bold text-center">
         <span className="text-myorange">جدیدترین </span>وبلاگ ها
       </h2>
-      <div className="flex items-center m-auto md:px-52 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14  max-w-1900 pr-48">
+      <div className="flex items-center m-auto md:px-64 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14  max-w-1900 pr-48">
         <Swiper
           modules={[Navigation]}
           navigation

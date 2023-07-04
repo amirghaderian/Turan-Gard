@@ -31,7 +31,7 @@ const Search = () => {
     );
   }
   return (
-    <div className="flex items-center justify-center md:px-52 ">
+    <div className="flex items-center justify-center md:px-64 ">
       <div
         className={`flex md:flex-row flex-col items-center justify-center gap-y-9 gap-x-8  rounded-full md:gap-x-4 lg:flex-1  bg-mywhite p-6 mb-16 ${
           toggleSearch && " bottom-36"
