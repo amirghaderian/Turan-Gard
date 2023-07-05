@@ -36,14 +36,23 @@ const Header2 = () => {
   return (
     <section className="mb-16 ">
       <img className="md:hidden" src={turan} />
-      <div className="hidden md:flex items-center justify-center">
-        <div className="h-900 min-w-full  bg-red-50">
+      <div className="relative hidden md:flex items-center justify-center">
+
+
+<div className=" min-w-full  bg-red-50 " >
+
+</div>
+
+
+
+
+        <div className=" min-w-full  bg-red-50">
           <video
             src={worldMove}
             autoPlay
             loop
             muted
-            className=" object-fill h-900 w-full min-h-900 max-w-1900  mx-auto p-0 "
+            className="relative object-fill h-900 w-full min-h-900 max-w-1900  mx-auto p-0 "
           />
           <div className="absolute	top-1/2 text-white right-40">
             <h2 className="text-6xl  font-medium"> توران گرد </h2>
@@ -71,7 +80,6 @@ const Header2 = () => {
                 alt="bestPrice"
                 className="w-10 h-10 mx-auto"
               />
-              <pre />
               <span className="text-2xl font-medium pt-1">بهترین قیمت</span>
             </div>
 
@@ -105,7 +113,6 @@ const Header2 = () => {
             <span className="flex justify-center text-2xl font-medium text pt-1 text-center">
               رضایت مشتری
             </span>
-
             <span className="text-sm text-center">آسایش و رضایت مشتریان</span>
             <span className="text-sm text-center">بهترین رسالت ماست</span>
           </div>

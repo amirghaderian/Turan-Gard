@@ -8,7 +8,7 @@ const About = () => {
     <>
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto"
+          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto max-w-7xl"
           style={styles}
         ></div>
         <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">

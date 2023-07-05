@@ -12,7 +12,7 @@ const BestTrip = () => {
           <h2 className="text-center font-bold text-xl md:text-2xl md:text-start md:px-8">
             <span className="text-red-50">بهترین سفرتان</span> را تجربه کنید
           </h2>
-          <p className="mt-5 px-4 md:px-8 md:text-lg text-sm w-96">
+          <p className="mt-5 px-4 md:px-8 md:text-lg text-sm w-56 mobileL:w-96">
             تور ویژه به ایروان اکنون برای شما محیاست تا با خانواده تان سفری پر
             شور و هیجان داشته باشید. این سفر فوق العاده در تاریخ جذاب پیش روی
             شما رخ خواهد داد و برای رزرو هر چه سریعتر با همکاران ما در تماس
