@@ -1,10 +1,10 @@
 import React from "react";
-import { Swiper, SwiperSlide ,} from "swiper/react";
-import  { Navigation, Pagination,A11y } from 'swiper';
-import "swiper/swiper.min.css"
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper";
+import "swiper/swiper.min.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 // icons
 import takhteJamshid from "../../public/assets/takhtjamshid-new.jpg";
 import turkiye from "../../public/assets/turkiye.jpg";
@@ -15,10 +15,6 @@ import canada from "../../public/assets/canada.webp";
 // components
 import Package from "./Package";
 //sideBar
-
-
-
-
 
 const packs = [
   {
@@ -83,36 +79,26 @@ const Packages = () => {
         </p>
       </div>
 
-      <div className="flex items-center px-1 md:px-64 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1900 mx-auto">
-        <Swiper spaceBetween={4} modules={[Navigation]}
-        navigation
-        pagination={{clickable:true}}
+      <div className="flex items-center px-1 mobileL:px-32  md:px-64 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1900 mx-auto">
+        <Swiper
+          spaceBetween={4}
+          modules={[Navigation]}
+          navigation
+          pagination={{ clickable: true }}
           breakpoints={{
-            1700: {
-              slidesPerView: 4.8,
-            },
-            1560: {
+            2560: {
               slidesPerView: 4,
             },
-            1420: {
-              slidesPerView: 3.5,
+            1440: {
+              slidesPerView: 2.8,
             },
-            1280: {
-              slidesPerView: 3,
-            },
-            1140: {
-              slidesPerView: 2.5,
-            },
-            1000: {
-              slidesPerView: 2,
-            },
-            860: {
+            1024: {
               slidesPerView: 1.5,
             },
           }}
         >
           {packs.map((pack) => (
-            <SwiperSlide key={pack.id} > 
+            <SwiperSlide key={pack.id}>
               <Package
                 title={pack.title}
                 description={pack.description}

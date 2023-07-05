@@ -8,6 +8,9 @@ module.exports = {
       minHeight: { 900: "900px" },
       textUnderlineOffset:{20:"20px"},
       textDecorationThickness:{3:"3px"},
+      screens:{
+        mobileL:"425px"
+      },
       colors: {
         myblue: "#BFD7ED",
         myorange: "#FF8300",

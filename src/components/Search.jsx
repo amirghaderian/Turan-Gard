@@ -19,7 +19,7 @@ const Search = () => {
   }
   function DatePickerInput(props) {
     return (
-      <div className="bg-mywhite py-2 flex text-end  justify-around rounded-md overflow-hidden border ">
+      <div className="bg-mywhite py-2 flex text-end  justify-around rounded-md overflow-hidden border  ">
         <input className="popo px-5" {...props} />
         <img
           src={calendar}
@@ -31,9 +31,9 @@ const Search = () => {
     );
   }
   return (
-    <div className="flex items-center justify-center md:px-64 ">
+    <div className="flex items-center justify-center md:px-64   " id="destination">
       <div
-        className={`flex md:flex-row flex-col items-center justify-center gap-y-9 gap-x-8  rounded-full md:gap-x-4 lg:flex-1  bg-mywhite p-6 mb-16 ${
+        className={`flex md:flex-row flex-col items-center justify-center gap-y-9 gap-x-8  rounded-full md:gap-x-4 lg:flex-1 max-w-1900  bg-mywhite p-6 mb-16 ${
           toggleSearch && " bottom-36"
         } ${isMobile && "min-w-full"}`}
       >

@@ -39,28 +39,28 @@ const Blogs = () => {
           pagination={{ clickable: true }}
           breakpoints={{
             1700: {
-              slidesPerView: 5.5,
-            },
-            1560: {
-              slidesPerView: 5,
-            },
-            1420: {
-              slidesPerView: 4.5,
-            },
-            1280: {
               slidesPerView: 4,
             },
-            1140: {
+            1560: {
               slidesPerView: 3.5,
             },
-            1000: {
+            1420: {
               slidesPerView: 3,
+            },
+            1280: {
+              slidesPerView: 2.5,
+            },
+            1140: {
+              slidesPerView: 2,
+            },
+            1000: {
+              slidesPerView: 1.5,
             },
             860: {
               slidesPerView: 2.5,
             },
             740: {
-              slidesPerView: 1,
+              slidesPerView: 2,
             },
             620: {
               slidesPerView: 1,
