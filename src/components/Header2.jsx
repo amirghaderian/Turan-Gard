@@ -39,10 +39,10 @@ const Header2 = () => {
       <div className="relative hidden md:flex items-center justify-center">
 
 
-<div className=" min-w-full  bg-red-50 " >
+{/*  comment by mehrshad <div className=" min-w-full  bg-red-50 " >
 
 </div>
-
+ */}
 
 
 
