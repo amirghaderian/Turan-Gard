@@ -2,7 +2,13 @@ import React from "react";
 import Cards from "./Cards";
 const About = () => {
   const styles = {
-    backgroundImage: `url('../../../public/assets/airplan2.jpg')`,
+    background: `url('../../../public/assets/airplan.jpg') no-repeat top center`,
+  };
+  const styles2 = {
+    width: "300px",
+    margin: "0 auto;", /* left margin half width */
+    /*below for demo purposes only*/
+    minHeight: "200px"    
   };
   return (
     <>
@@ -10,13 +16,18 @@ const About = () => {
         <div
           className="flex bg-fixed bg-no-repeat justify-center h-[70vh]   object-cover mx-auto"
           style={styles}
-        ></div>
-        <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">
+        >
+   <div  >
+   <h1 className="text-white text-3xl leading-loose text-center">
           درباره توران گرد
         </h1>
-        <p className="relative bottom-32 text-white text-xl pr-20 ">
+        <p className="text-white text-xl">
           تجربه سفری لذت بخش با توران گرد
         </p>
+   </div>
+
+        </div>
+   
         <div className=" flex mx-auto justify-center ">
           <div>
             <div className=" border-bordcolor max-w-1700">
