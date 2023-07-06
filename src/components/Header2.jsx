@@ -39,21 +39,21 @@ const Header2 = () => {
       <div className="relative hidden md:flex items-center justify-center">
 
 
-{/*  comment by mehrshad <div className=" min-w-full  bg-red-50 " >
+<div className=" min-w-full  bg-red-50 " >
 
 </div>
- */}
+
 
 
 
         <div className=" min-w-full  bg-red-50">
-          <video
+          {/* <video
             src={worldMove}
             autoPlay
             loop
             muted
             className="relative object-fill h-900 w-full min-h-900 max-w-1900  mx-auto p-0 "
-          />
+          /> */}
           <div className="absolute	top-1/2 text-white right-40">
             <h2 className="text-6xl  font-medium"> توران گرد </h2>
             <p className="pt-3  text-xl font-medium ">

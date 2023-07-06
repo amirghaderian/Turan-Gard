@@ -8,20 +8,18 @@ const About = () => {
     <>
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto  "
+          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto max-w-7xl"
           style={styles}
-        >
-  <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">
+        ></div>
+        <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">
           درباره توران گرد
         </h1>
         <p className="relative bottom-32 text-white text-xl pr-20 ">
           تجربه سفری لذت بخش با توران گرد
         </p>
-        </div>
-      
-        <div className=" flex mx-auto   ">
+        <div className=" flex mx-auto justify-center ">
           <div>
-            <div className="border-2 border-bordcolor">
+            <div className="border-2 border-bordcolor max-w-1700">
               <h1 className=" border-b-2 border-bordcolor text-3xl pr-5 ">
                 آژانس هواپیمایی توران گرد
               </h1>
