@@ -2,13 +2,13 @@ import React from "react";
 import Cards from "./Cards";
 const About = () => {
   const styles = {
-    backgroundImage: `url('../../../public/assets/airplan.jpg')`,
+    backgroundImage: `url('../../../public/assets/airplan2.jpg')`,
   };
   return (
     <>
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] w-full  object-cover mx-auto max-w-7xl"
+          className="flex bg-fixed bg-no-repeat justify-center h-[70vh]   object-cover mx-auto"
           style={styles}
         ></div>
         <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">
@@ -19,8 +19,8 @@ const About = () => {
         </p>
         <div className=" flex mx-auto justify-center ">
           <div>
-            <div className="border-2 border-bordcolor max-w-1700">
-              <h1 className=" border-b-2 border-bordcolor text-3xl pr-5 ">
+            <div className=" border-bordcolor max-w-1700">
+              <h1  style={{backgroundColor:"#f1b070",borderRadius: "10px",padding: "10px"}} className=" border-b-2 border-bordcolor text-3xl pr-5 ">
                 آژانس هواپیمایی توران گرد
               </h1>
               <p className="leading-8 text-xl font-thin pr-5 	">
@@ -45,8 +45,8 @@ const About = () => {
                 هستیم راه را درست رفته‌ایم، چرا که مورداعتماد شما هستیم.
               </p>
             </div>
-            <div className=" border-2 border-bordcolor mt-28 pr-5">
-              <h1 className="border-b-2 border-bordcolor text-3xl mt-3 pr-5 ">
+            <div className="  border-bordcolor mt-28 pr-5">
+              <h1 style={{backgroundColor:"#f1b070",borderRadius: "10px",padding: "10px"}} className="border-b-2 border-bordcolor text-3xl mt-3 pr-5 ">
                 ارزش های توران گرد
               </h1>
               <p className="leading-8 text-xl font-thin pr-5">
