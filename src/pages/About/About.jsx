@@ -14,7 +14,7 @@ const About = () => {
     <>
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-[70vh]   object-cover mx-auto"
+          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] mb-10  object-cover mx-auto"
           style={styles}
         >
    <div  >
