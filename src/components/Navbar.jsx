@@ -5,20 +5,23 @@ import ticket from "../../public/assets/ticket.svg";
 import airplane from "../../public/assets/airplane.svg";
 import hamburgerMenu from "../../public/assets/sort.svg";
 import login from "../../public/assets/login.svg";
+import { useParams } from "react-router-dom";
 import {
   Box,
   Divider,
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   SwipeableDrawer,
 } from "@mui/material";
-import Icon from "@mui/material/Icon";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [state, setState] = useState({ right: false });
+  const [isActive, setActive] = useState(true);
+  const { id } = useParams();
+  console.log(id);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -41,23 +44,23 @@ const Navbar = () => {
     >
       <List>
         {[
-          { text: "صفحه اصلی", href: "#", iconName: "" },
-          { text: "لیست تور ها", href: "#pakage", iconName: "" },
-          { text: "مقصد ها", href: "#destination", iconName: "" },
-          { text: "اقامت", href: "#bestTrip", iconName: "" },
-          { text: "بلاگ ها", href: "#weblog", iconName: "" },
+          { text: "صفحه اصلی", href: "/#", iconName: "" },
+          { text: "لیست تور ها", href: "/#pakage", iconName: "" },
+          { text: "مقصد ها", href: "/#destination", iconName: "" },
+          { text: "اقامت", href: "/#bestTrip", iconName: "" },
+          { text: "بلاگ ها", href: "/#weblog", iconName: "" },
         ].map((item) => (
           <ListItem key={item.text} disablePadding>
             <ListItemButton>
               <ListItemText className="text-center" />
               <a href={item.href}>{item.text}</a>
-              
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
     </Box>
+ 
   );
 
   return (
@@ -80,17 +83,19 @@ const Navbar = () => {
         <nav className="flex-1">
           <ul className="flex items-center gap-x-4">
             <li>
-              <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 text-myorange border-b-2 border-myorange hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#"
+              <Link
+                to="/ "
+                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3 ${
+                  id === "/" ? "bg-yellow-900" : ""
+                }`}
               >
                 صفحه اصلی
-              </a>
+              </Link>
             </li>
             <li>
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#pakage"
+               href="/#pakage"
               >
                 لیست تور ها
               </a>
@@ -98,15 +103,16 @@ const Navbar = () => {
             <li>
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#destination"
+                href="/#destination"
               >
                 مقصد ها
               </a>
             </li>
+
             <li>
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#bestTrip"
+                href="/#bestTrip"
               >
                 اقامت
               </a>
@@ -114,10 +120,18 @@ const Navbar = () => {
             <li>
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#weblog"
+                href="/#weblog"
               >
                 وبلاگ
               </a>
+            </li>
+            <li>
+              <Link
+                to="/about "
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+              >
+                درباره ی ما
+              </Link>
             </li>
           </ul>
         </nav>

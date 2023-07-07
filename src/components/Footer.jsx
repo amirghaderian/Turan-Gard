@@ -5,6 +5,7 @@ import airplane from "../../public/assets/airplane.svg";
 import mail from "../../public/assets/mail.svg";
 import phone from "../../public/assets/phone.svg";
 import enamad from "../../public/assets/enamad.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -33,24 +34,24 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
+              <Link
+                to="/ "
+                className={`cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300 `}
               >
                 صفحه اصلی
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#pakage"
-                className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
+            <Link
+                to="/#pakage "
+                className={`cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300 `}
               >
-                لیست تور ها
-              </a>
+                لیست تور ها 
+              </Link>
             </li>
             <li>
               <a
-                href="#destination"
+                href="/#destination"
                 className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
               >
                 مقصد ها
@@ -58,7 +59,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#bestTrip"
+                href="/#bestTrip"
                 className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
               >
                 اقامت
@@ -66,7 +67,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#weblog"
+                href="/#weblog"
                 className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
               >
                 وبلاگ

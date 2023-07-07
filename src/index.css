@@ -162,6 +162,20 @@
         url("../public/fonts/YekanBakh/YekanBakh-Light/YekanBakh-Light.ttf")
         format("truetype");
   }
+  @font-face {
+    font-family: yekanbakh;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../public/fonts/YekanBakh/YekanBakh-Fat/YekanBakh-Fat.eot");
+    src: url("../public/fonts/YekanBakh/YekanBakh-Fat/YekanBakh-Fat.woff")
+        format("woff"),
+      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../public/fonts/YekanBakh/YekanBakh-Fat/@font-face/e1d06869ee86ac98052a5a1788122235.woff2")
+        format("woff2"),
+      /* FF39+,Chrome36+, Opera24+*/
+        url("../public/fonts/YekanBakh/YekanBakh-Fat/YekanBakh-Fat.ttf")
+        format("truetype");
+  }
   html {
     font-family: iranyekan;
   }
