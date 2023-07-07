@@ -11,9 +11,12 @@ module.exports = {
       screens: {
         mobileL: "425px",
       },
+<<<<<<< HEAD
       boxShadow: {
         "sp": "0 0 30px 0 rgba(0, 0, 0, 0.3)",
       },
+=======
+>>>>>>> 58760f837c0301d9c18d5f9d853f5acb26b23cca
       colors: {
         myblue: "#BFD7ED",
         myorange: "#FF8300",

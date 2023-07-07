@@ -36,15 +36,31 @@ const Header2 = () => {
   return (
     <section className="mb-16 ">
       <img className="md:hidden" src={turan} />
+<<<<<<< HEAD
       
         <div className=" min-w-full  bg-red-50 "></div>
 
         <div className=" min-w-full  bg-red-50 bg-fixed">
           <video
+=======
+      <div className="relative hidden md:flex items-center justify-center">
+
+
+<div className=" min-w-full  bg-red-50 " >
+
+</div>
+
+
+
+
+        <div className=" min-w-full  bg-red-50">
+          {/* <video
+>>>>>>> 58760f837c0301d9c18d5f9d853f5acb26b23cca
             src={worldMove}
             autoPlay
             loop
             muted
+<<<<<<< HEAD
             className="relative object-fill h-900 w-full min-h-900 max-w-1900"
           />
           <div className="absolute	top-1/2 text-white right-40">
@@ -53,6 +69,16 @@ const Header2 = () => {
               تجربه ی سفری لذت بخش ،آرام و مطمئن
             </p>
             <p className="pt-3  text-xl font-medium  ">با توران گرد</p>
+=======
+            className="relative object-fill h-900 w-full min-h-900 max-w-1900  mx-auto p-0 "
+          /> */}
+          <div className="absolute	top-1/2 text-white right-40">
+            <h2 className="text-6xl  font-medium"> توران گرد </h2>
+            <p className="pt-3  text-xl font-medium ">
+              تجربه ی سفری لذت بخش آرام و مطمئن
+            </p>
+            <p className="pt-3  text-xl font-medium ">با توران گرد</p>
+>>>>>>> 58760f837c0301d9c18d5f9d853f5acb26b23cca
           </div>
         </div>
 

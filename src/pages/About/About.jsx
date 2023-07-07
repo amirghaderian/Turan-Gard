@@ -14,11 +14,19 @@ const About = () => {
     <>
       <div className="bg-aboutcolor">
         <div
+<<<<<<< HEAD
           className="flex bg-fixed bg-no-repeat justify-center h-[90vh] mb-10  object-cover mx-auto "
           style={styles}
         >
    <div  >
    <h1 className="text-white text-3xl leading-loose text-center font-extrabold">
+=======
+          className="flex bg-fixed bg-no-repeat justify-center h-[70vh] mb-10  object-cover mx-auto"
+          style={styles}
+        >
+   <div  >
+   <h1 className="text-white text-3xl leading-loose text-center">
+>>>>>>> 58760f837c0301d9c18d5f9d853f5acb26b23cca
           درباره توران گرد
         </h1>
         <p className="text-white text-xl">
@@ -31,7 +39,11 @@ const About = () => {
         <div className=" flex mx-auto justify-center ">
           <div>
             <div className=" border-bordcolor max-w-1700">
+<<<<<<< HEAD
               <h1  style={{borderRadius: "10px"}} className="shadow-sp  shadow-slate-400 border-b-2 border-bordcolor text-3xl  bg-gradient-to-l from-myorange p-2 ">
+=======
+              <h1  style={{backgroundColor:"#f1b070",borderRadius: "10px",padding: "10px"}} className=" border-b-2 border-bordcolor text-3xl pr-5 ">
+>>>>>>> 58760f837c0301d9c18d5f9d853f5acb26b23cca
                 آژانس هواپیمایی توران گرد
               </h1>
               <p className="leading-8 text-xl font-thin pr-5 	">
@@ -57,7 +69,11 @@ const About = () => {
               </p>
             </div>
             <div className="  border-bordcolor mt-28 pr-5">
+<<<<<<< HEAD
               <h1 style={{borderRadius: "10px",padding: "10px"}} className=" shadow-sp  shadow-slate-400  border-b-2 border-bordcolor text-3xl mt-3 pr-5 bg-gradient-to-l from-myorange p-2  ">
+=======
+              <h1 style={{backgroundColor:"#f1b070",borderRadius: "10px",padding: "10px"}} className="border-b-2 border-bordcolor text-3xl mt-3 pr-5 ">
+>>>>>>> 58760f837c0301d9c18d5f9d853f5acb26b23cca
                 ارزش های توران گرد
               </h1>
               <p className="leading-8 text-xl font-thin pr-5">
