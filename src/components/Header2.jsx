@@ -32,47 +32,38 @@ const Header2 = () => {
   const handleMouseLeaveCard3 = () => {
     setIsHoveredCard3(false);
   };
-
   return (
-    <section className="mb-16 ">
+    <section className="mb-16 max-w-[1920px] mx-auto ">
       <img className="md:hidden" src={turan} />
-      
-        <div className=" min-w-full  bg-red-50 "></div>
 
-<<<<<<< HEAD
-        <div className=" min-w-full  bg-red-50 bg-fixed ">
-=======
-        <div className=" min-w-full  bg-red-50 bg-fixed">
->>>>>>> d7941d0973ecac61be001ac253d8915172e00e12
-          <video
-            src={worldMove}
-            autoPlay
-            loop
-            muted
-<<<<<<< HEAD
-            className="relative object-fill h-900 w-full min-h-900 max-w-1900 mx-auto"
-          />
-          <div className="absolute	top-1/2 text-white right-40 ">
-=======
-            className="relative object-fill h-900 w-full min-h-900 max-w-1900"
-          />
-          <div className="absolute	top-1/2 text-white right-40">
->>>>>>> d7941d0973ecac61be001ac253d8915172e00e12
-            <h2 className="text-6xl   font-sans font-extrabold text-myorange "> توران گرد </h2>
-            <p className="pt-3  text-xl font-medium ">
-              تجربه ی سفری لذت بخش ،آرام و مطمئن
-            </p>
-            <p className="pt-3  text-xl font-medium  ">با توران گرد</p>
-          </div>
+      <div className="  min-w-full  bg-red-50 bg-fixed  relative">
+        <video
+          src={worldMove}
+          autoPlay
+          loop
+          muted
+          className="relative object-fill h-900 w-full min-h-900 max-w-1900 mx-auto"
+        />
+        <div className="flex flex-col absolute top-[20rem] right-[15rem] ">
+          <h2 className="text-6xl   font-sans font-extrabold text-myorange   right-1/2 top-1/2 ">
+           سفر رویایی خود را با ما تجربه کنید.
+          </h2>
+          <p className="pt-3  text-xl font-medium    right-1/4 top-1/2 text-slate-100">
+            ارائه دهنده راهی آسان و لذت‌بخش
+          </p>
+          <p className="pt-3  text-xl font-medium   right-1/2 top-1/2  text-slate-100">
+            برای ورود به دنیایی از زیبایی و شگفتی
+          </p>
         </div>
+      </div>
 
-      <div className="px-40 hidden md:flex items-center justify-center -mt-16 min-w-900 ">
+      <div className="px-40 hidden md:flex items-center justify-center -mt-16 min-w-900 pt-10 ">
         <div className="w-full bg-red-50 py-14 px-4 flex items-center justify-center gap-x-10 cards rounded-full">
           {/* first */}
           <div
             className={`flex flex-col  card rounded-3xl	 h-52 p-5 bg-mycard shadow-2xl shadow-orange-200 hover:shadow-orange-400 ${
               isHoveredCard2 || isHoveredCard3 ? "blur-sm	scale-90 	" : ""
-            } hover: border-4 cursor-pointer transition hover: duration-700 hover:scale-110	 	`}
+            } hover: border-4 cursor-pointer transition hover: duration-700 hover:scale-110`}
             onMouseEnter={handleHoverCard1}
             onMouseLeave={handleMouseLeaveCard1}
           >
