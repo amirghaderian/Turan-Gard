@@ -36,33 +36,25 @@ const Header2 = () => {
   return (
     <section className="mb-16 ">
       <img className="md:hidden" src={turan} />
-      <div className="relative hidden md:flex items-center justify-center">
+      
+        <div className=" min-w-full  bg-red-50 "></div>
 
-
-<div className=" min-w-full  bg-red-50 " >
-
-</div>
-
-
-
-
-        <div className=" min-w-full  bg-red-50">
-          {/* <video
+        <div className=" min-w-full  bg-red-50 bg-fixed ">
+          <video
             src={worldMove}
             autoPlay
             loop
             muted
-            className="relative object-fill h-900 w-full min-h-900 max-w-1900  mx-auto p-0 "
-          /> */}
-          <div className="absolute	top-1/2 text-white right-40">
-            <h2 className="text-6xl  font-medium"> توران گرد </h2>
+            className="relative object-fill h-900 w-full min-h-900 max-w-1900 mx-auto"
+          />
+          <div className="absolute	top-1/2 text-white right-40 ">
+            <h2 className="text-6xl   font-sans font-extrabold text-myorange "> توران گرد </h2>
             <p className="pt-3  text-xl font-medium ">
-              تجربه ی سفری لذت بخش آرام و مطمئن
+              تجربه ی سفری لذت بخش ،آرام و مطمئن
             </p>
-            <p className="pt-3  text-xl font-medium ">با توران گرد</p>
+            <p className="pt-3  text-xl font-medium  ">با توران گرد</p>
           </div>
         </div>
-      </div>
 
       <div className="px-40 hidden md:flex items-center justify-center -mt-16 min-w-900 ">
         <div className="w-full bg-red-50 py-14 px-4 flex items-center justify-center gap-x-10 cards rounded-full">

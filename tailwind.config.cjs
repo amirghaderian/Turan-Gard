@@ -11,6 +11,9 @@ module.exports = {
       screens: {
         mobileL: "425px",
       },
+      boxShadow: {
+        "sp": "0 0 30px 0 rgba(0, 0, 0, 0.3)",
+      },
       colors: {
         myblue: "#BFD7ED",
         myorange: "#FF8300",

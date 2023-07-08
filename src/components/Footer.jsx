@@ -51,7 +51,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#destination"
+                href="/#destination"
                 className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
               >
                 مقصد ها
@@ -59,7 +59,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#bestTrip"
+                href="/#bestTrip"
                 className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
               >
                 اقامت
@@ -67,7 +67,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#weblog"
+                href="/#weblog"
                 className="  cursor-pointer py-2 hover:border-b-2 hover:border-mywhite transition-all duration-300"
               >
                 وبلاگ

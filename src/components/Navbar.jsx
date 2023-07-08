@@ -5,7 +5,6 @@ import ticket from "../../public/assets/ticket.svg";
 import airplane from "../../public/assets/airplane.svg";
 import hamburgerMenu from "../../public/assets/sort.svg";
 import login from "../../public/assets/login.svg";
-import { useParams } from "react-router-dom";
 import {
   Box,
   Divider,
@@ -15,14 +14,13 @@ import {
   ListItemText,
   SwipeableDrawer,
 } from "@mui/material";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [state, setState] = useState({ right: false });
-  const [isActive, setActive] = useState(true);
-  const { id } = useParams();
-  console.log(id);
-
+  const pathName = window.location.pathname;
+  const url = window.location.href;
+  console.log(url);
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event &&
@@ -44,11 +42,11 @@ const Navbar = () => {
     >
       <List>
         {[
-          { text: "صفحه اصلی", href: "#", iconName: "" },
-          { text: "لیست تور ها", href: "#pakage", iconName: "" },
-          { text: "مقصد ها", href: "#destination", iconName: "" },
-          { text: "اقامت", href: "#bestTrip", iconName: "" },
-          { text: "بلاگ ها", href: "#weblog", iconName: "" },
+          { text: "صفحه اصلی", href: "/#", iconName: "" },
+          { text: "لیست تور ها", href: "/#pakage", iconName: "" },
+          { text: "مقصد ها", href: "/#destination", iconName: "" },
+          { text: "اقامت", href: "/#bestTrip", iconName: "" },
+          { text: "بلاگ ها", href: "/#weblog", iconName: "" },
         ].map((item) => (
           <ListItem key={item.text} disablePadding>
             <ListItemButton>
@@ -60,7 +58,6 @@ const Navbar = () => {
       </List>
       <Divider />
     </Box>
- 
   );
 
   return (
@@ -85,25 +82,28 @@ const Navbar = () => {
             <li>
               <Link
                 to="/ "
-                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3 ${
-                  id === "/" ? "bg-yellow-900" : ""
+                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3   ${
+                  pathName === "/"
+                    && "text-myorange border-b-2 border-myorange"
+
                 }`}
               >
                 صفحه اصلی
               </Link>
             </li>
             <li>
-              <Link
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-               TO="/#pakage"
+              <a
+                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3
+                ${pathName==="/#pakage" && "text-myorange border-b-2 border-myorange"}`}
+                href="/#pakage"
               >
                 لیست تور ها
-              </Link>
+              </a>
             </li>
             <li>
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#destination"
+                href="/#destination"
               >
                 مقصد ها
               </a>
@@ -112,15 +112,15 @@ const Navbar = () => {
             <li>
               <a
                 className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#bestTrip"
+                href="/#bestTrip"
               >
                 اقامت
               </a>
             </li>
             <li>
               <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
-                href="#weblog"
+                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3`}
+                href="/#weblog"
               >
                 وبلاگ
               </a>
@@ -128,7 +128,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about "
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3 first-letter
+                ${pathName === "/about" && "text-myorange border-b-2 border-myorange"}`}
               >
                 درباره ی ما
               </Link>

@@ -1,26 +1,40 @@
 import React from "react";
 import Cards from "./Cards";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer"
 const About = () => {
   const styles = {
-    backgroundImage: `url('../../../public/assets/airplan2.jpg')`,
+    background: `url('../../../public/assets/airplan.jpg') no-repeat top center`,
+  };
+  const styles2 = {
+    width: "300px",
+    margin: "0 auto;", /* left margin half width */
+    /*below for demo purposes only*/
+    minHeight: "200px"    
   };
   return (
     <>
+    <Navbar/>
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-[70vh]   object-cover mx-auto"
+          className="flex bg-fixed bg-no-repeat justify-center h-[90vh] mb-10  object-cover mx-auto "
           style={styles}
-        ></div>
-        <h1 className="relative bottom-32 text-white text-3xl leading-loose pr-14">
+        >
+   <div  >
+   <h1 className="text-white text-3xl leading-loose text-center font-extrabold">
           درباره توران گرد
         </h1>
-        <p className="relative bottom-32 text-white text-xl pr-20 ">
+        <p className="text-white text-xl">
           تجربه سفری لذت بخش با توران گرد
         </p>
+   </div>
+
+        </div>
+   
         <div className=" flex mx-auto justify-center ">
           <div>
             <div className=" border-bordcolor max-w-1700">
-              <h1  style={{backgroundColor:"#f1b070",borderRadius: "10px",padding: "10px"}} className=" border-b-2 border-bordcolor text-3xl pr-5 ">
+              <h1  style={{borderRadius: "10px"}} className="shadow-sp  shadow-slate-400 border-b-2 border-bordcolor text-3xl  bg-gradient-to-l from-myorange p-2 ">
                 آژانس هواپیمایی توران گرد
               </h1>
               <p className="leading-8 text-xl font-thin pr-5 	">
@@ -46,7 +60,7 @@ const About = () => {
               </p>
             </div>
             <div className="  border-bordcolor mt-28 pr-5">
-              <h1 style={{backgroundColor:"#f1b070",borderRadius: "10px",padding: "10px"}} className="border-b-2 border-bordcolor text-3xl mt-3 pr-5 ">
+              <h1 style={{borderRadius: "10px",padding: "10px"}} className=" shadow-sp  shadow-slate-400  border-b-2 border-bordcolor text-3xl mt-3 pr-5 bg-gradient-to-l from-myorange p-2  ">
                 ارزش های توران گرد
               </h1>
               <p className="leading-8 text-xl font-thin pr-5">
@@ -60,6 +74,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
