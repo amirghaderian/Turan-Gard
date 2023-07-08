@@ -39,15 +39,25 @@ const Header2 = () => {
       
         <div className=" min-w-full  bg-red-50 "></div>
 
+<<<<<<< HEAD
         <div className=" min-w-full  bg-red-50 bg-fixed ">
+=======
+        <div className=" min-w-full  bg-red-50 bg-fixed">
+>>>>>>> d7941d0973ecac61be001ac253d8915172e00e12
           <video
             src={worldMove}
             autoPlay
             loop
             muted
+<<<<<<< HEAD
             className="relative object-fill h-900 w-full min-h-900 max-w-1900 mx-auto"
           />
           <div className="absolute	top-1/2 text-white right-40 ">
+=======
+            className="relative object-fill h-900 w-full min-h-900 max-w-1900"
+          />
+          <div className="absolute	top-1/2 text-white right-40">
+>>>>>>> d7941d0973ecac61be001ac253d8915172e00e12
             <h2 className="text-6xl   font-sans font-extrabold text-myorange "> توران گرد </h2>
             <p className="pt-3  text-xl font-medium ">
               تجربه ی سفری لذت بخش ،آرام و مطمئن

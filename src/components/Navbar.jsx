@@ -93,9 +93,14 @@ const Navbar = () => {
             </li>
             <li>
               <a
+<<<<<<< HEAD
                 className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3
                 ${pathName==="/#pakage" && "text-myorange border-b-2 border-myorange"}`}
                 href="/#pakage"
+=======
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+               href="/#pakage"
+>>>>>>> d7941d0973ecac61be001ac253d8915172e00e12
               >
                 لیست تور ها
               </a>
@@ -119,7 +124,11 @@ const Navbar = () => {
             </li>
             <li>
               <a
+<<<<<<< HEAD
                 className={`block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3`}
+=======
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+>>>>>>> d7941d0973ecac61be001ac253d8915172e00e12
                 href="/#weblog"
               >
                 وبلاگ
