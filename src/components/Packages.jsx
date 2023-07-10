@@ -81,7 +81,6 @@ const Packages = () => {
 
       <div className="flex items-center px-1 mobileL:px-32  md:px-64 justify-between gap-x-4 overflow-auto mb-8 pb-8 md:w-[400]  max-w-1900 mx-auto">
         <Swiper
-          spaceBetween={4}
           modules={[Navigation]}
           navigation
           pagination={{ clickable: true }}
@@ -90,10 +89,11 @@ const Packages = () => {
               slidesPerView: 4,
             },
             1440: {
-              slidesPerView: 2.8,
+              slidesPerView: 3.8,
             },
+
             1024: {
-              slidesPerView: 1.5,
+              slidesPerView:1.6,
             },
           }}
         >
