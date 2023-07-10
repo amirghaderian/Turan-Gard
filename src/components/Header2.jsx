@@ -36,7 +36,7 @@ const Header2 = () => {
     <section className="mb-16 max-w-[1920px] mx-auto ">
       <img className="md:hidden" src={turan} />
 
-      <div className="  min-w-full  bg-red-50 bg-fixed  relative">
+      <div className="hidden md:flex  min-w-full  bg-red-50 bg-fixed  relative">
         <video
           src={worldMove}
           autoPlay
@@ -46,13 +46,11 @@ const Header2 = () => {
         />
         <div className="flex flex-col absolute top-[20rem] right-[15rem] ">
           <h2 className="text-6xl   font-sans font-extrabold text-myorange   right-1/2 top-1/2 ">
-           سفر رویایی خود را با ما تجربه کنید.
+            سفر رویایی خود را با ما تجربه کنید.
           </h2>
           <p className="pt-3  text-xl font-medium    right-1/4 top-1/2 text-slate-100">
-            ارائه دهنده راهی آسان و لذت‌بخش
-          </p>
-          <p className="pt-3  text-xl font-medium   right-1/2 top-1/2  text-slate-100">
-            برای ورود به دنیایی از زیبایی و شگفتی
+            با ما به دنیایی از ماجراجویی و سفر دسترسی پیدا کنید <br />و
+            تجربه‌هایی به یادماندنی را در سفرهایی فراموش‌نشدنی تجربه کنید
           </p>
         </div>
       </div>
