@@ -39,7 +39,7 @@ const Cards = () => {
           <div className="icon h-24 text-center"><TipsAndUpdates sx={{ fontSize: 60 , color: '#243c5a'}} className=' mt-8'/></div>
           <h2 className="text-center underline underline-offset-20 decoration-dashed decoration-3" style={{color:"#243c5a",fontWeight:600,fontSize:"18px"}}>گفت خنثی و شنود موثر</h2>
           <p className="text-center p-5 pt-6 w-80 mx-auto">
-            ما در علی‌بابا گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
+            ما در توران گرد گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
             پیش‌داوری نیستم. ضمن اینکه همیشه منظورمان را واضح و بدون تفسیر بیان
             می‌کنیم.
           </p>
@@ -48,7 +48,7 @@ const Cards = () => {
           <div className="icon h-24 text-center"><TipsAndUpdates sx={{ fontSize: 60 , color: '#243c5a'}} className=' mt-8'/></div>
           <h2 className="text-center underline underline-offset-20 decoration-dashed decoration-3" style={{color:"#243c5a",fontWeight:600,fontSize:"18px"}}>گفت خنثی و شنود موثر</h2>
           <p className="text-center p-5 pt-6 w-80 mx-auto">
-            ما در علی‌بابا گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
+            ما در توران گرد گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
             پیش‌داوری نیستم. ضمن اینکه همیشه منظورمان را واضح و بدون تفسیر بیان
             می‌کنیم.
           </p>
@@ -57,7 +57,7 @@ const Cards = () => {
           <div className="icon h-24 text-center "><TipsAndUpdates sx={{ fontSize: 60 , color: '#243c5a'}} className=' mt-8'/></div>
           <h2 className="text-center underline underline-offset-20 decoration-dashed decoration-3" style={{color:"#243c5a",fontWeight:600,fontSize:"18px"}}>گفت خنثی و شنود موثر</h2>
           <p className="text-center p-5 pt-6 w-80 mx-auto">
-            ما در علی‌بابا گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
+            ما در توران گرد گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
             پیش‌داوری نیستم. ضمن اینکه همیشه منظورمان را واضح و بدون تفسیر بیان
             می‌کنیم.
           </p>
@@ -66,7 +66,7 @@ const Cards = () => {
           <div className="icon h-24 text-center  "><TipsAndUpdates sx={{ fontSize: 60 , color: '#243c5a'}} className=' mt-8'/></div>
           <h2 className="text-center underline underline-offset-20 decoration-dashed decoration-3" style={{color:"#243c5a",fontWeight:600,fontSize:"18px"}}>گفت خنثی و شنود موثر</h2>
           <p className="text-center p-5 pt-6 w-80 mx-auto">
-            ما در علی‌بابا گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
+            ما در توران گرد گفته‌های همکاران را بدون پیش‌زمینه می‌شنویم و اهل
             پیش‌داوری نیستم. ضمن اینکه همیشه منظورمان را واضح و بدون تفسیر بیان
             می‌کنیم.
           </p>

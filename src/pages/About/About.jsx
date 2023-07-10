@@ -6,18 +6,13 @@ const About = () => {
   const styles = {
     background: `url('../../../public/assets/airplan.jpg') no-repeat top center`,
   };
-  const styles2 = {
-    width: "300px",
-    margin: "0 auto;" /* left margin half width */,
-    /*below for demo purposes only*/
-    minHeight: "200px",
-  };
+
   return (
     <>
       <Navbar />
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-[90vh] mb-10  object-cover mx-auto "
+          className="flex bg-fixed bg-no-repeat justify-center h-900 mb-10  object-cover mx-auto "
           style={styles}
         >
           <div>
