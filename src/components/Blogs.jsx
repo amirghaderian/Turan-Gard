@@ -56,12 +56,6 @@ const Blogs = () => {
             1000: {
               slidesPerView: 1.5,
             },
-            860: {
-              slidesPerView: 2.5,
-            },
-            740: {
-              slidesPerView: 2,
-            },
             620: {
               slidesPerView: 1,
             },

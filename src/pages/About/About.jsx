@@ -12,7 +12,7 @@ const About = () => {
       <Navbar />
       <div className="bg-aboutcolor">
         <div
-          className="flex bg-fixed bg-no-repeat justify-center h-900 mb-10  object-cover mx-auto  w-1700"
+          className="flex bg-fixed bg-no-repeat justify-center h-900 mb-10  object-cover mx-16 "
           style={styles}
         >
           <div>
@@ -59,7 +59,7 @@ const About = () => {
             <div className="  border-bordcolor mt-28 ">
               <h1
                 style={{ borderRadius: "10px", padding: "10px" }}
-                className=" shadow-sp  shadow-slate-400  border-b-2 border-bordcolor text-3xl mt-3 pr-5 bg-gradient-to-l from-myorange p-2  "
+                className=" shadow-sp  shadow-slate-400  border-b-2 border-bordcolor text-3xl mt-3 bg-gradient-to-l from-myorange p-2  "
               >
                 ارزش های توران گرد
               </h1>
